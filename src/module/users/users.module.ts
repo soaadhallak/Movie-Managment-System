@@ -13,6 +13,6 @@ import { UsersController } from './presentation/users.controller';
       useClass: PrismaUserRepository,
     },
   ],
-  exports: [UsersService],
+  exports: [UsersService, UserRepository],
 })
 export class UsersModule {}
